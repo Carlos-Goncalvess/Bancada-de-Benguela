@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Bancada de Benguela</title>
+
+<style>
+body{
+    margin:0;
+    font-family: serif;
+    background:#f4f4f4;
+}
+
+/* TOPO */
+header{
+    background: linear-gradient(90deg,#d22730,#000,#fcd116);
+    color:white;
+    text-align:center;
+    padding:30px 10px;
+    position:relative;
+}
+header h1{
+    font-weight:bold;
+    font-size:42px;
+    margin:0;
+}
+header p{
+    font-size:26px;
+    margin-top:10px;
+}
+
+/* MENU */
+.menu-btn{
+    position:absolute;
+    left:15px;
+    top:15px;
+    font-size:30px;
+    cursor:pointer;
+}
+nav{
+    position:fixed;
+    top:0; left:0;
+    width:0;
+    height:100%;
+    background:#8B4513;
+    overflow-x:hidden;
+    transition:0.5s;
+    padding-top:60px;
+    z-index:2;
+}
+nav a{
+    display:block;
+    color:white;
+    padding:12px 25px;
+    font-size:22px;
+    text-decoration:none;
+}
+nav a:hover{background:#7a3f10;}
+.close{
+    position:absolute;
+    top:10px; right:20px;
+    font-size:36px;
+}
+
+/* SEÇÕES */
+section{
+    background:white;
+    margin:15px;
+    padding:20px;
+    border-radius:8px;
+}
+h2{color:#006400;}
+img{
+    max-width:100%;
+    border-radius:6px;
+    margin:10px 0;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <span class="menu-btn" onclick="openNav()">☰</span>
+    <h1>Bancada de Benguela</h1>
+    <p>Bem-vindos 🇦🇴</p>
+</header>
+
+<nav id="menu">
+    <a href="javascript:void(0)" class="close" onclick="closeNav()">×</a>
+    <a href="#inicio">Início</a>
+    <a href="#menucomidas">Menu</a>
+    <a href="#conhecimento">Conhecimento da Província</a>
+    <a href="#fotos">Fotos da Bancada de Benguela</a>
+</nav>
+
+<section id="inicio">
+<h2>Início</h2>
+<p>Consulte o menu das comidas e bebidas através do menu ☰</p>
+</section>
+
+<section id="menucomidas">
+<h2>Menu das Comidas</h2>
+<h3>Segunda-feira</h3>
+<ul><li>(adicionar)</li></ul>
+<h3>Terça-feira</h3>
+<ul><li>(adicionar)</li></ul>
+</section>
+
+<section id="conhecimento">
+<h2>Conhecimento da Província de Benguela</h2>
+
+<section id="conhecimento">
+<h3>Conhecimento da Província de Benguela</h3>
+
+<h4>Governador</h4>
+<img src="https://drive.google.com/uc?export=view&id=1h-ozOEOCrHnuURCmuFpNutXLa9poYRrb" alt="Governador">
+<p>O governador atual da província de Benguela é responsável pela administração local...</p>
+
+<h4>Cultura</h4>
+<img src="https://drive.google.com/uc?export=view&id=1LAk1HQAHkWfNnPVdkkPbjpus4pc7jkB8" alt="Cultura 1">
+<img src="https://drive.google.com/uc?export=view&id=1rBOQMPhZqU4QKMGk_69tURd_MaUd7v15" alt="Cultura 2">
+<p>A cultura de Benguela inclui danças, música, festas e tradições locais...</p>
+
+<h4>Gastronomia</h4>
+<img src="https://drive.google.com/uc?export=view&id=1FaExtIQFvYR0A7fCj0D96vpb-DTdpQGZ" alt="Gastronomia 1">
+<img src="https://drive.google.com/uc?export=view&id=1QzQGv9sd1Zle0sK3SqKtfK3s0C6oxJ4f" alt="Gastronomia 2">
+<p>Os pratos típicos incluem funge, calulu, muamba e peixes diversos...</p>
+
+<h4>Vestimenta</h4>
+<img src="https://drive.google.com/uc?export=view&id=1A-wH8rVu1wOrMWJm-j0MYFDt052A2sZe" alt="Vestimenta">
+<p>As vestimentas tradicionais são coloridas e usadas em danças e festivais...</p>
+
+<h4>Paisagens</h4>
+<img src="https://drive.google.com/uc?export=view&id=1rHNwfO3HEIs1kyjYoISCucDydp4nVT39" alt="Paisagem 1">
+<img src="https://drive.google.com/uc?export=view&id=1NGeBXW3xO6L4aBVdwtPN8O3TgYpvQ6CP" alt="Paisagem 2">
+
+<h4>Religião</h4>
+<img src="https://drive.google.com/uc?export=view&id=17hUTHDE0cxvq609ZOlO2JP-9pSqdNM5q" alt="Religião 1">
+<img src="https://drive.google.com/uc?export=view&id=1JpQjDj0Cy628clMgSYSXE16Yx_fP-OHV" alt="Religião 2">
+
+<h4>Localização Geográfica</h4>
+<img src="https://drive.google.com/uc?export=view&id=17zBR_T0C3RexYGTQPW395BcB8c0pTQ5w" alt="Localização">
+<p>Benguela situa-se na região oeste de Angola, ao longo do Oceano Atlântico...</p>
+
+</section>
+
+<section id="fotos">
+<h2>Fotos da Bancada de Benguela</h2>
+<h3>7ª Classe</h3>
+<p>(Adicionar fotos)</p>
+<h3>8ª Classe</h3>
+<p>(Adicionar fotos)</p>
+<h3>9ª Classe</h3>
+<p>(Adicionar fotos)</p>
+</section>
+
+<section>
+<h2>QR Code do Site</h2>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://SEU_LINK_DO_SITE_AQUI">
+</section>
+
+<script>
+function openNav(){document.getElementById("menu").style.width="260px";}
+function closeNav(){document.getElementById("menu").style.width="0";}
+</script>
+
+</body>
+</html>
